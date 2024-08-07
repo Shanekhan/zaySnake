@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kalam:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url(../snakegame/img/bg.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: yellowgreen;
+    font-family: "EB Garamond", serif;
+}
+#board {
+    background: linear-gradient(135deg, #1d4f4f, #004d00); 
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    border: 3px solid #1b541b; 
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    color: yellowgreen;
+    font-family: "EB Garamond", serif;
+}
+
+.head {
+    background-color: linear-gradient(135deg, #aeea00, #76ff03); 
+    border: 3px solid #2c6b2f;
+    transform: scale(1.05); 
+    border-radius: 12px; 
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); 
+}
+.snake {
+    background: rgb(91, 146, 83); 
+    border: 0.25vmin solid wheat;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(purple, green);
+    border: 0.25vmin solid black;
+    border-radius: 8px;
+}
